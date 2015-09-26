@@ -1,0 +1,46 @@
+.word,
+.letter {
+
+	span {
+		width: 50px;
+		height: 50px;
+		border: 1px solid black;
+		display: inline-block; 
+		margin-right: 12px; 
+		margin-bottom: 12px; 
+		font-size: 40px; 
+		text-transform: uppercase;
+
+
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&.has-letter{
+			background-color: rgba(green, .5);
+			color: white;
+		}
+
+		&.has-not-letter{
+			background-color: rgba(red, .5);
+			color: white;
+
+		}
+
+	}
+
+
+}
+
+.letter {
+	span {
+		&:hover {
+			background-color: #999;
+			color: white;
+			cursor: pointer;
+			transition: all .5s;
+
+		}
+	}
+}
