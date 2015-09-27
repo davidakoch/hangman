@@ -26,11 +26,13 @@ var HANG = HANG || {};
 
 	$('#js-letter-picker span').on('click', function(){
 		var selectedLetter = $(this).data('letter');
-		var count = $('js-word span[data-letter="' + selectedLetter + '"]').length
+		
 
-		$('js-letter-picker span[data-letter="' + selectedLetter + '"]').text(selectedLetter);
+		$('#js-letter-picker span[data-letter="' + selectedLetter + '"]').text(selectedLetter);
 
 		$('#js-word span[data-letter="' + selectedLetter +'"]').text(selectedLetter);
+
+		var count = $('#js-word span[data-letter="' + selectedLetter + '"]').length
 
 		if(count >= 1){
 			$(this).addClass('has-letter');
