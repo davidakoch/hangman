@@ -13,11 +13,11 @@
     margin-right: 0; }
   .word span.has-letter,
   .letter span.has-letter {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.4);
     color: white; }
   .word span.has-not-letter,
   .letter span.has-not-letter {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.4);
     color: white; }
 
 .letter span:hover {

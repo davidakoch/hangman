@@ -18,12 +18,12 @@
 		}
 
 		&.has-letter{
-			background-color: green;
+			background-color: rgba(green, .4);
 			color: white;
 		}
 
 		&.has-not-letter{
-			background-color: red;
+			background-color: rgba(red, .4);
 			color: white;
 
 		}
