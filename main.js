@@ -20,6 +20,11 @@ HANG.hangman = function(word){
 
 	$('#js-letter-picker span').on('click', function(){
 		var selectedLetter = $(this).data('letter');
+		$('js-letter-picker span[data-letter="' + selectedLetter + '"]').text(selectedLetter);
+
+
+
+		$('#js-word span[data-letter="' + selectedLetter +'"]').text(selectedLetter);
 
 
 	});
