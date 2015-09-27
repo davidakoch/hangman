@@ -26,6 +26,14 @@ HANG.hangman = function(word){
 
 		$('#js-word span[data-letter="' + selectedLetter +'"]').text(selectedLetter);
 
+		var count = $('js-word span[data-letter="' + selectedLetter + '"]').length
+
+		if(count = 1){
+			$(this).addClass('has-letter');
+		} else {
+			$(this).addClass('has-not-letter');
+		}
+
 
 	});
 
